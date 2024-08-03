@@ -1,11 +1,11 @@
 {
-<<<<<<< HEAD
   "name": "frontend_react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@sanity/client": "^6.21.1",
     "@sanity/image-url": "^1.0.2",
+    "@sanity/vision": "^3.52.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -15,13 +15,18 @@
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
     "react-scripts": "5.0.1",
+    "sanity": "^3.52.1",
+    "styled-components": "^6.1.8",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "sanity dev",
+    "deploy": "sanity deploy",
+    "deploy-graphql": "sanity graphql deploy"
   },
   "eslintConfig": {
     "extends": [
@@ -42,31 +47,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
-=======
-  "name": "portfolioharman",
-  "private": true,
-  "version": "1.0.0",
-  "main": "package.json",
-  "license": "UNLICENSED",
-  "scripts": {
-    "dev": "sanity dev",
-    "start": "sanity start",
-    "build": "sanity build",
-    "deploy": "sanity deploy",
-    "deploy-graphql": "sanity graphql deploy"
-  },
-  "keywords": [
-    "sanity"
-  ],
-  "dependencies": {
-    "@sanity/vision": "^3.52.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sanity": "^3.52.1",
-    "styled-components": "^6.1.8"
-  },
-  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@sanity/eslint-config-studio": "^4.0.0",
     "@types/react": "^18.0.25",
     "eslint": "^8.6.0",
@@ -78,6 +59,5 @@
     "printWidth": 100,
     "bracketSpacing": false,
     "singleQuote": true
->>>>>>> origin/main
   }
 }
